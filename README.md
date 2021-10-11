@@ -1,0 +1,2 @@
+# wukong-solana-mint
+WuKongSol
