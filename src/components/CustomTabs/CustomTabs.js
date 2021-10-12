@@ -46,6 +46,7 @@ export default function CustomTabs(props) {
           centered
           variant={scrollableMatch ? "scrollable": "centered"}
           allowScrollButtonsMobile
+          scrollButtons="on"
           value={value}
           onChange={handleChange}
           classes={{

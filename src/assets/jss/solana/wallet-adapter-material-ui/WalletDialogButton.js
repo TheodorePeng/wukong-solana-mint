@@ -22,7 +22,7 @@ export const WalletDialogButton = (_a) => {
         if (!event.defaultPrevented)
             setOpen(true);
     }, [onClick, setOpen]);
-    return React.createElement(Button, {endIcon: React.createElement(MyIcon), onClick: handleClick, color: color, variant: variant }, children);
+    return React.createElement(Button, {startIcon: React.createElement(MyIcon), onClick: handleClick, color: color, variant: variant }, children);
     // return (React.createElement(Button, Object.assign({ color: color, variant: variant, onClick: handleClick}, props), children));
 };
 //# sourceMappingURL=WalletDialogButton.js.map

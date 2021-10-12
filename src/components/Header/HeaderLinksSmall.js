@@ -19,11 +19,11 @@ import Wallet from "components/SolanaWallet/Wallet";
 
 const useStyles = makeStyles(styles);
 
-export default function HeaderLinks(props) {
+export default function HeaderLinksSmall(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItemButton}>
+      <ListItem className={classes.listItemButtonSmall}>
         {/* <Button
           // href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="primary"
@@ -47,6 +47,7 @@ export default function HeaderLinks(props) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-twitter"} />
+            <h4>&nbsp;&nbsp;&nbsp;Twitter</h4>
           </Button>
         </Tooltip>
       </ListItem>
@@ -64,6 +65,7 @@ export default function HeaderLinks(props) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-discord"} />
+            <h4>&nbsp;&nbsp;&nbsp;Discord</h4>
           </Button>
         </Tooltip>
       </ListItem>
@@ -81,6 +83,7 @@ export default function HeaderLinks(props) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-medium"} />
+            <h4>&nbsp;&nbsp;&nbsp;Medium</h4>
           </Button>
           {/* <Wallet /> */}
         </Tooltip>

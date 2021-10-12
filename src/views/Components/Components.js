@@ -17,6 +17,7 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinksSmall from "components/Header/HeaderLinksSmall.js";
 import SectionBasics from "./Sections/SectionBasics.js";
 import SectionNavbars from "./Sections/SectionNavbars.js";
 import SectionTabs from "./Sections/SectionTabs.js";
@@ -29,6 +30,7 @@ import SectionDownload from "./Sections/SectionDownload.js";
 import InnerBackground from "assets/img/bg-blue.jpg";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import { Tooltip } from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
@@ -50,6 +52,7 @@ export default function Components(props) {
       <Header
         brand="WuKongSol"
         rightLinks={<HeaderLinks />}
+        rightLinksSmall={<HeaderLinksSmall />}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -72,13 +75,17 @@ export default function Components(props) {
               <br />
               <br />
               <div>
-                <Button
-                  color="primary" 
-                  size="xxlg"
-                  disabled
-                >
-                  <b>MINT NOW!</b>
-                </Button>
+                <Tooltip title="Release Time: TBA" enterDelay={500} leaveDelay={200}>
+                  <span>
+                    <Button
+                      color="primary" 
+                      size="xxlg"
+                      disabled
+                    >
+                      <b>MINT NOW!</b>
+                    </Button>
+                  </span>
+                </Tooltip>
               </div>
             </GridItem>
           </GridContainer>

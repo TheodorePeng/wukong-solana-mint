@@ -42,7 +42,7 @@ export default function Footer(props) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="theo.nxpeng@gmail.com"
+                href="mailto:theo.nxpeng@gmail.com"
                 className={classes.block}
                 target="_blank"
               >

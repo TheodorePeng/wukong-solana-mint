@@ -53,7 +53,7 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const { color, rightLinks, leftLinks, rightLinksSmall, brand, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
@@ -79,7 +79,7 @@ export default function Header(props) {
           )}
         </div>
         <Hidden smDown implementation="css">
-          {rightLinks}
+        {rightLinks}
         </Hidden>
         <Hidden mdUp>
           <IconButton
@@ -87,7 +87,7 @@ export default function Header(props) {
             aria-label="open drawer"
             onClick={handleDrawerToggle}
           >
-            <Menu />
+          <Menu />
           </IconButton>
         </Hidden>
       </Toolbar>
@@ -101,10 +101,10 @@ export default function Header(props) {
           }}
           onClose={handleDrawerToggle}
         >
-          <div className={classes.appResponsive}>
-            {leftLinks}
-            {rightLinks}
-          </div>
+        <div className={classes.appResponsive}>
+          {leftLinks}
+          {rightLinksSmall}
+        </div>
         </Drawer>
       </Hidden>
     </AppBar>
