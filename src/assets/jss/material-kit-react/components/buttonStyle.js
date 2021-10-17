@@ -256,8 +256,14 @@ const buttonStyle = {
     opacity: "0.65",
     pointerEvents: "none",
   },
+  // xxlg: {
+  //   padding: "2rem 7rem",
+  //   fontSize: "1.6rem",
+  //   lineHeight: "1.333333",
+  //   borderRadius: "0.8rem",
+  // },
   xxlg: {
-    padding: "2rem 7rem",
+    padding: "2rem 4rem",
     fontSize: "1.6rem",
     lineHeight: "1.333333",
     borderRadius: "0.8rem",

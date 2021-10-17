@@ -24,6 +24,7 @@ import SectionTabs from "./Sections/SectionTabs.js";
 import SectionPills from "./Sections/SectionPills.js";
 import SectionRoadmap from "./Sections/SectionRoadmap.js";
 import SectionPhotograph from "./Sections/SectionPhotograph.js";
+import SectionCarousel from "./Sections/SectionCarousel.js";
 import SectionJavascript from "./Sections/SectionJavascript.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
@@ -82,7 +83,7 @@ export default function Components(props) {
                       size="xxlg"
                       disabled
                     >
-                      <b>MINT NOW!</b>
+                      <b>MINT COMING SOON!</b>
                     </Button>
                   </span>
                 </Tooltip>
@@ -93,7 +94,8 @@ export default function Components(props) {
       </Parallax>
 
       <div style={innerBgStyle} className={classNames(classes.main, classes.mainRaised)}>
-        <SectionPhotograph />
+        {/* <SectionPhotograph /> */}
+        <SectionCarousel />
         <SectionRoadmap />
       </div>
 
